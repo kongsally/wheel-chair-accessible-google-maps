@@ -6,17 +6,28 @@
 </head>
 
 <style>
+
+#searchRoute {
+    margin: 1em;
+}
+
 #map-canvas {
+    margin: 1em;
+    margin-right: 0em;
     width: 60%;
     height: 300px;
     float: left;
 }
 
 #messages {
-    width: 35%;
+    background: #f2f2f2;
+    width: 30%;
+    margin: 1em;
+    margin-left: 0em;
+    padding: 1em;
     float: right;
-    margin: 10px 20px;
 }
+
 </style>
 <script>
 
@@ -187,8 +198,10 @@ MyResponse.prototype.getElevatorStatus = function( stopName, lineShortName ) {
 // return whether the given station object has an elevator
 MyResponse.prototype.hasElevator = function( stationObj ) {
 
+    if(stationObj != null) {
     if( stationObj.wheelchair_boarding !== null ) {
         return true; 
+    }
     }
 
     return false;
@@ -309,7 +322,7 @@ $(document).ready( function() {
 
 </body>
 
-<div>
+<div id = "searchRoute">
     <input id="startAddress" type="text" value="1128 foulkrod st phila"/>
     <input id="endAddress" type="text" value="30th street station phila"/>
     <input type="submit" name="Submit" onClick="return getDirections();"/>
