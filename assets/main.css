@@ -74,6 +74,11 @@ span .messageHeader {
     color: #fefefe;
 }
 
+#messages p {
+    background:rgba(0,0,0,0.5);
+    padding: 0.3em;
+}
+
 input[type=text]
 {
     background-color: #f2f2f2;

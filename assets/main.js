@@ -164,9 +164,9 @@ MyResponse.prototype.getElevatorStatus = function( stopName, lineShortName ) {
 MyResponse.prototype.hasElevator = function( stationObj ) {
 
     if(stationObj != null) {
-    if( stationObj.wheelchair_boarding !== null ) {
-        return true; 
-    }
+        if( stationObj.wheelchair_boarding != null ) {
+            return true; 
+        }
     }
 
     return false;
