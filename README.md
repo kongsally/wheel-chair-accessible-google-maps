@@ -1,6 +1,7 @@
 Wheel Chair Accessible Google Maps
 ==================================
 
+http://summer-of-open-source.github.io/wheel-chair-accessible-google-maps/
 
 http://nowheelchair.jimsmiley.us
 
@@ -17,3 +18,5 @@ The data is out there, but wheelchair accessible data is in one location, and el
 Data on outages was taken from [James Tyack](http://www.tyack.net/)'s accessibility site [Unlock Philly](http://www.unlockphilly.com).
 
 Data on wheel chair accessibility was taken from [Septa's website](http://www3.septa.org/hackathon/).
+
+Voice over demo can be found at http://nowheelchair.jimsmiley.us/demo/speech-demo.html. 

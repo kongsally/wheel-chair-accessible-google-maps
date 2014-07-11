@@ -1,0 +1,124 @@
+body {
+    background-color: #F8F7F5;
+}
+
+@media (min-width:900px){
+    #info {
+        text-align: center;
+        padding: 1em;
+	    margin-bottom: 0em;
+        width: 35%;
+        padding-left: 1.5em;
+        position: absolute;
+        left: 0;
+        margin: 0;
+    }
+
+    #searchRoute {
+        background: rgba(255,255,255,0.8);
+        padding: 0.5em;
+        width: 50%;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+    }
+
+     #map-canvas {
+        margin: 0;
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        right:0;
+        bottom: 0;   
+        z-index: -1; 
+    }
+}
+
+@media (max-width:899px){
+     #info {
+        color: #028B8F;
+        text-align: center;
+        padding: 1.5em;
+        top: 1.5em;
+    }
+
+     #searchRoute {
+        padding: 0.5em;
+        width: 100%;
+        margin-top: -1em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    
+    #map-canvas {
+        margin: 0;
+        width: 100%;
+       height: 30em;
+       bottom: 0;   
+        z-index: -1; 
+    }
+}
+
+#info > span {
+    background: rgba(0,0,0,0.8);
+    padding: 0.5em;
+    color: #fefefe !important;
+    font-family: "Open Sans";
+}
+
+input[type=text]
+{
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    height: 2.2em;
+    padding-left:10px;
+    width: 33%;
+    border: solid 1px #e0e0e0;
+}
+
+input[type=submit]
+{
+    background-color: #027073;
+    color: #fefefe;
+    height: 2.5em;
+    font-family: "Open Sans";
+    font-weight: 700;
+    width: 20%;
+    border: none;
+    margin: 0.5em;
+    text-transform:uppercase;
+}
+input[type=submit]:hover
+{
+    background-color: #028B8F;
+}
+
+input:focus {
+    outline: none;
+}
+
+#info > p  {
+    font-family: "Open Sans";
+	color: #3e3e3e;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 1em;
+    padding-top: 0em;
+}
+
+#info > p > a {
+    color: #028B8F;
+     text-decoration: none;
+}
+
+#info > p > a:hover {
+    text-decoration: underline;
+}
+
+#info > h2 {
+    font-family: "Open Sans";
+    color: #027073;
+    margin-top: 0.5em;
+    line-height: 1.2em;
+}
